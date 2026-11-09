@@ -2,6 +2,8 @@
 
 An interactive solar-system planetarium built with Next.js, React Three Fiber, Three.js and a custom Keplerian orbital solver.
 
+**Live demo:** https://bezaleelpaul.github.io/Orbital-Observatory/
+
 ## Run locally
 
 ```bash
@@ -11,7 +13,7 @@ npm run dev
 
 ## Deploy
 
-GitHub Actions builds a static export and publishes it to GitHub Pages at `https://bezaleelpaul.github.io/Orbital-Observatory/`.
+GitHub Actions builds a static export and publishes it to GitHub Pages at `https://bezaleelpaul.github.io/Orbital-Observatory/` whenever changes are pushed to `main`.
 
 ## Controls
 
