@@ -7,13 +7,30 @@ An interactive solar-system planetarium built with Next.js, React Three Fiber, T
 ## Run locally
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
+
+## Testing
+
+The orbital solver (`src/lib/kepler.ts`) is covered by a Vitest suite that
+checks Kepler's equation against known solutions, orbital periodicity,
+periapsis/apoapsis distances, inclination invariants and path bounds.
+
+```bash
+npm run typecheck
+npm test
+```
+
+CI runs typecheck, tests and the production build before publishing.
 
 ## Deploy
 
 GitHub Actions builds a static export and publishes it to GitHub Pages at `https://bezaleelpaul.github.io/Orbital-Observatory/` whenever changes are pushed to `main`.
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
 
 ## Controls
 
